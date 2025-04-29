@@ -1,0 +1,217 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.ipl-header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.ipl-header h1 {
+    color: #f1c40f;
+    font-weight: bold;
+}
+
+.ipl-tabs {
+    background-color: #ecf0f1;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.nav-tabs .nav-link {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.nav-tabs .nav-link.active {
+    color: #e74c3c;
+    background-color: white;
+    border-bottom: 3px solid #e74c3c;
+}
+
+/* Home Tab */
+.ipl-hero {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.ipl-hero img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Hero Section Styling */
+.hero-text {
+    color: #ffffff; /* White color */
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.8), /* Dark shadow for contrast */
+        -1px -1px 0 #000, /* Outline effect */
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent dark overlay */
+    padding: 15px 25px;
+    border-radius: 8px;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #f1c40f; /* IPL yellow */
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.feature-card {
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card img {
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Match Results */
+.match-list {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.match-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.match-item:hover {
+    background-color: #f8f9fa;
+}
+
+.match-item .teams {
+    font-weight: bold;
+}
+
+.match-item .result {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.match-details {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.player-performance {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Highlights */
+.record-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.record-card h3 {
+    color: #e74c3c;
+    border-bottom: 2px solid #f1c40f;
+    padding-bottom: 5px;
+}
+
+.record-card ol {
+    padding-left: 20px;
+}
+
+.record-card li {
+    margin-bottom: 5px;
+}
+
+/* Predictor */
+.team-prediction {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    height: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.win-prob {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 10px 0;
+}
+
+.predicted-score {
+    font-size: 20px;
+    color: #e74c3c;
+    margin-bottom: 15px;
+}
+
+.winner-prediction {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Squads */
+.player-card {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.player-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+/* Footer */
+.ipl-footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+    text-align: center;
+}
