@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Stats Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header with IPL Logo -->
+    <header class="ipl-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-2">
+                    <img src="images/ipl-logo.jpg" alt="IPL Logo" class="img-fluid">
+                </div>
+                <div class="col-md-10">
+                    <h1>IPL Statistics Hub</h1>
+                    <p class="tagline">Complete stats from 2009 to 2024</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="ipl-tabs">
+        <div class="container">
+            <ul class="nav nav-tabs" id="iplTabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#results">Match Results</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#highlights">Highlights</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#predictor">Match Predictor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#squads">Team Squads</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Tab Content -->
+    <div class="container mt-4">
+        <div class="tab-content">
+            <!-- Home Tab -->
+            <div class="tab-pane fade show active" id="home">
+                <div class="ipl-hero">
+                    <img src="images/ipl-hero.png" alt="IPL Action" class="img-fluid">
+                    <div class="hero-text">
+                        <h2>Welcome to IPL Stats Hub</h2>
+                        <p>Explore comprehensive statistics from all IPL seasons</p>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card feature-card">
+                            <img src="images/matches-icon.jpeg" class="card-img-top" alt="Matches">
+                            <div class="card-body">
+                                <h5 class="card-title">Match Results</h5>
+                                <p class="card-text">Detailed results from all IPL matches</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card feature-card">
+                            <img src="images/stats-icon.png" class="card-img-top" alt="Stats">
+                            <div class="card-body">
+                                <h5 class="card-title">Season Highlights</h5>
+                                <p class="card-text">Key records and statistics</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card feature-card">
+                            <img src="images/predict-icon.jpeg" class="card-img-top" alt="Predict">
+                            <div class="card-body">
+                                <h5 class="card-title">Match Predictor</h5>
+                                <p class="card-text">Predict outcomes of upcoming matches</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Match Results Tab -->
+            <div class="tab-pane fade" id="results">
+                <h2>Recent Match Results</h2>
+                <div class="match-list" id="matchList">
+                    <!-- Filled by JavaScript -->
+                </div>
+                <div class="match-details" id="matchDetails" style="display: none;">
+                    <button class="btn btn-secondary mb-3" id="backToList">Back to Matches</button>
+                    <div id="matchDetailsContent"></div>
+                </div>
+            </div>
+
+            <!-- Highlights Tab -->
+            <div class="tab-pane fade" id="highlights">
+                <h2>IPL Records and Highlights</h2>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="record-card">
+                            <h3>Most Runs in IPL</h3>
+                            <ol>
+                                <li>Virat Kohli - 8004 runs</li>
+                                <li>Shikhar Dhawan - 6769 runs</li>
+                                <li>Rohit Sharma - 6628 runs</li>
+                                <li>David Warner - 6565 runs</li>
+                                <li>Suresh Raina - 5528 runs</li>
+                            </ol>
+                        </div>
+
+                        <div class="record-card">
+                            <h3>Most Wickets in IPL</h3>
+                            <ol>
+                                <li>Yuzvendra Chahal - 214 wickets</li>
+                                <li>Piyush Chawla - 192 wickets</li>
+                                <li>Bhuvneshwar Kumar - 189 wickets</li>
+                                <li>Sunil Narine - 187 wickets</li>
+                                <li>Ravichandran Ashwin - 185 wickets</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="record-card">
+                            <h3>Most Sixes in IPL</h3>
+                            <ol>
+                                <li>Chris Gayle - 357 sixes</li>
+                                <li>Rohit Sharma - 292 sixes</li>
+                                <li>Virat Kohli - 283 sixes</li>
+                                <li>MS Dhoni - 260 sixes</li>
+                                <li>AB de Villiers - 251 sixes</li>
+                            </ol>
+                        </div>
+
+                        <div class="record-card">
+                            <h3>Highest Team Totals</h3>
+                            <ol>
+                                <li>Sunrisers Hyderabad - 287/3 against Royal Challengers Bangalore (RCB)</li>
+                                <li>Royal Challengers Bangalore - 263/5 against Pune Warriors</li>
+                                <li>Sunrisers Hyderabad - 277/3 against Mumbai Indians</li>
+                                <li>Chennai Super Kings - 256/4 against Kings XI Punjab</li>
+                                <li>Delhi Capitals - 231/4 against Kolkata Knight Riders</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="record-card">
+                    <h3>Fastest Centuries</h3>
+                    <ol>
+                        <li>Chris Gayle - 30 balls (RCB vs PWI, 2013)</li>
+                        <li>Yusuf Pathan - 37 balls (RR vs MI, 2010)</li>
+                        <li>David Miller - 38 balls (PBKS vs RCB, 2013)</li>
+                        <li>Travis Head - 39 balls (SRH vs RCB, 2024)</li>
+                        <li>Priyansh Arya - 39 balls (PBKS vs CSK, 2025)</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Predictor Tab -->
+            <div class="tab-pane fade" id="predictor">
+                <h2>Match Predictor</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <select id="predictTeam1" class="form-select mb-3">
+                            <option value="">Select Team 1</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <select id="predictTeam2" class="form-select mb-3">
+                            <option value="">Select Team 2</option>
+                        </select>
+                    </div>
+                </div>
+                <button id="predictBtn" class="btn btn-primary">Predict Match</button>
+
+                <div id="predictionResult" class="mt-4" style="display: none;">
+                    <h3>Prediction Result</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="team-prediction" id="team1Prediction">
+                                <h4 id="team1Name"></h4>
+                                <div class="win-prob" id="team1Prob"></div>
+                                <div class="predicted-score" id="team1Score"></div>
+                                <h5>Key Players:</h5>
+                                <div id="team1Players"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="team-prediction" id="team2Prediction">
+                                <h4 id="team2Name"></h4>
+                                <div class="win-prob" id="team2Prob"></div>
+                                <div class="predicted-score" id="team2Score"></div>
+                                <h5>Key Players:</h5>
+                                <div id="team2Players"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="winner-prediction mt-4" id="winnerPrediction"></div>
+                </div>
+            </div>
+
+            <!-- Squads Tab -->
+            <div class="tab-pane fade" id="squads">
+                <h2>Team Squads</h2>
+                <select id="teamSelect" class="form-select mb-3">
+                    <option value="">Select Team</option>
+                </select>
+
+                <div id="squadContainer" class="row">
+                    <!-- Filled by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="ipl-footer">
+        <div class="container">
+            <p>© 2024 IPL Stats Hub | Data from 2009-2024 seasons</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
